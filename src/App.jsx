@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import gz from "./assets/gz.mp3";
-import "./App.css";
+import "./App.scss";
 import Fireworks from "@fireworks-js/react";
 import useSound from "use-sound";
 
@@ -19,27 +19,11 @@ function App() {
     }
   }, [isRunning]);
 
-  const toggle = () => {
-    if (!ref.current) return;
-    if (ref.current.isRunning) {
-      ref.current.stop();
-    } else {
-      ref.current.start();
-    }
-  };
-
   const ref = useRef(null);
   return (
     <>
       <div id="container">
-        <div
-          style={{
-            display: "flex",
-            gap: "4px",
-            position: "absolute",
-            zIndex: 1,
-          }}
-        >
+        <div className="play-button">
           {!isRunning && (
             <button onClick={() => setisRunning(true)}>
               Är det din födelsedag?
@@ -58,10 +42,24 @@ function App() {
             background: "#000",
           }}
         />
-        <div id="overlay">GJATTIS /A</div>
-      </div>
 
-      <div>Hej</div>
+        <div
+          style={{ display: !isRunning ? "none" : "block" }}
+          className="text"
+        >
+          <div className="text1">Grattis på födelsedagen Elin</div>
+          <div className="text2">
+            En genomsnittlig vuxen människa har 32 tänder. Man 
+            skulle alltså kunna säga att du har lika många tänder som du är gammal. Du
+            omges av 32 av dessa små juveler som inte bara bär vittne om din
+            mognad, utan också reflekterar det strålande leende som belyser mitt och Isaks liv. Vi älskar dig.
+            <br />
+           Puss och kram
+           <br />
+           / Dag & Isak
+          </div>
+        </div>
+      </div>
     </>
   );
 }

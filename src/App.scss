@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+#container canvas,
+#overlay {
+  position: absolute;
+}
+canvas {
+  border: 1px solid black;
+}
+
+.play-button {
+  position: absolute;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.text {
+  position: absolute;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px #2c3a49;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-top: 2rem;
+}
+.text1 {
+  font-size: 3em;
+}
+
+.text2 {
+  padding-top: 1rem;
+  font-size: 1.8em;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
