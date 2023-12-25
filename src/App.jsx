@@ -47,16 +47,16 @@ function App() {
           style={{ display: !isRunning ? "none" : "block" }}
           className="text"
         >
-          <div className="text1">Grattis på födelsedagen Elin</div>
+          <div className="text1">Ett jättejättegrattis från alla oss till dig!</div>
           <div className="text2">
-            En genomsnittlig vuxen människa har 32 tänder. Man 
-            skulle alltså kunna säga att du har lika många tänder som du är gammal. Du
-            omges av 32 av dessa små juveler som inte bara bär vittne om din
-            mognad, utan också reflekterar det strålande leende som belyser mitt och Isaks liv. Vi älskar dig.
+            28 år snart fyllda, det firar vi med en brunch på stan när det passar. Vi återkommer med detaljer. Njut nu av Schweiz 🇨🇭
+
+        
+          
             <br />
-           Puss och kram
+            Puss och kram 
            <br />
-           / Dag & Isak
+           / Dag, Elin och Isak 🎉
           </div>
         </div>
       </div>
